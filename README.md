@@ -9,7 +9,9 @@ The official public issue tracker for **PBS (PlayStation Broadcast System)** and
 [![GitHub issues](https://img.shields.io/github/issues/seregonwar/PBS-Public-Issues-Tracker?style=flat-square)](https://github.com/seregonwar/PBS-Public-Issues-Tracker/issues)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/seregonwar/PBS-Public-Issues-Tracker?style=flat-square)](https://github.com/seregonwar/PBS-Public-Issues-Tracker/issues?q=is%3Aissue+is%3Aclosed)
 
-**[Report a bug](https://github.com/seregonwar/PBS-Public-Issues-Tracker/issues/new) · [Request a feature](https://github.com/seregonwar/PBS-Public-Issues-Tracker/issues/new) · [Browse existing issues](https://github.com/seregonwar/PBS-Public-Issues-Tracker/issues)**
+**[Report a bug](https://github.com/seregonwar/PBS-Public-Issues-Tracker/issues/new?template=bug_report.yml) · [Request a feature](https://github.com/seregonwar/PBS-Public-Issues-Tracker/issues/new?template=feature_request.yml) · [Report firmware compatibility](https://github.com/seregonwar/PBS-Public-Issues-Tracker/issues/new?template=firmware_compatibility.yml)**
+
+[Browse existing issues](https://github.com/seregonwar/PBS-Public-Issues-Tracker/issues)
 
 </div>
 
@@ -40,55 +42,19 @@ For public PBS Studio plugin development resources, see the [PBS SDK repository]
 1. **[Search existing issues](https://github.com/seregonwar/PBS-Public-Issues-Tracker/issues)** to avoid duplicates.
 2. Verify that the issue occurs on the most recent build **available to you**.
 3. Try to reproduce the problem and collect useful, non-sensitive information.
-4. Open **[a new issue](https://github.com/seregonwar/PBS-Public-Issues-Tracker/issues/new)** with a clear, specific title.
+4. **[Choose a report form](https://github.com/seregonwar/PBS-Public-Issues-Tracker/issues/new/choose)** and provide a clear, specific title.
 
-### Reporting a bug
+### Choose an issue form
 
-Please include as much of the following as possible:
+GitHub provides guided forms with dedicated fields for each report type:
 
-- **Component:** PBS payload (PS4/PS5), Web Dashboard, PBS Studio, or SDK integration.
-- **Version/build:** PBS or PBS Studio version, if available.
-- **Platform:** PS4/PS5 and exact firmware version, or desktop/mobile OS and version.
-- **Capture setup:** Resolution, frame rate, HDR on/off, audio configuration, and relevant network setup, if applicable.
-- **Steps to reproduce:** What you did before the problem occurred.
-- **Expected vs. actual behavior:** What should happen and what happened instead.
-- **Evidence:** Relevant logs, screenshots, or short recordings, with private information removed.
-- **Frequency:** Always, intermittently, or only under specific conditions.
+| Issue type | When to use it |
+| --- | --- |
+| **[Bug Report](https://github.com/seregonwar/PBS-Public-Issues-Tracker/issues/new?template=bug_report.yml)** | A reproducible issue with PBS, PBS Studio or the Web Dashboard. Include steps, expected/actual behavior, environment, and sanitized evidence. |
+| **[Feature Request](https://github.com/seregonwar/PBS-Public-Issues-Tracker/issues/new?template=feature_request.yml)** | A new capability or improvement. Explain the user problem, proposed solution, and any alternatives. |
+| **[Firmware Compatibility](https://github.com/seregonwar/PBS-Public-Issues-Tracker/issues/new?template=firmware_compatibility.yml)** | Report compatibility with a specific PS4/PS5 firmware, regressions, partial support, or request support for an untested firmware. |
 
-You can copy this template into a new issue:
-
-```markdown
-## Component
-PBS / PBS Web Dashboard / PBS Studio
-
-## Version and environment
-- App/payload version:
-- Console and firmware (if applicable):
-- OS and version (if applicable):
-- Resolution / FPS / HDR (if applicable):
-- Network setup (if relevant):
-
-## Description
-A clear description of the problem.
-
-## Steps to reproduce
-1.
-2.
-3.
-
-## Expected behavior
-
-## Actual behavior
-
-## Logs / screenshots
-Attach sanitized evidence, if available.
-
-## Additional context
-```
-
-### Requesting a feature
-
-Describe **the problem you want to solve**, your proposed solution, which PBS component it affects, and any alternatives you have considered. One feature request per issue makes feedback easier to track.
+Please use the most relevant form. All reports are public, and GitHub requires the mandatory fields to be completed before submission.
 
 ## Privacy and security
 
