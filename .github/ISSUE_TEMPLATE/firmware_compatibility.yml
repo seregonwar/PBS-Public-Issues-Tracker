@@ -1,0 +1,97 @@
+name: "Firmware Compatibility"
+description: "Report PS4/PS5 firmware support, regressions, or compatibility results."
+title: "[Firmware]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for **console firmware compatibility**: working configurations, failures, regressions and requests to support a firmware version.
+
+        **Do not upload firmware, proprietary driver/library dumps, exploit files or console identifiers.** Logs must be sanitized before posting. For unrelated bugs, use the Bug Report form instead.
+  - type: dropdown
+    id: console
+    attributes:
+      label: Console
+      options:
+        - PlayStation 5
+        - PlayStation 4
+    validations:
+      required: true
+  - type: input
+    id: firmware
+    attributes:
+      label: Exact firmware version
+      description: Use the firmware version displayed by your console.
+      placeholder: "e.g. 10.60"
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: Compatibility result
+      options:
+        - Fully working
+        - Partially working
+        - Not working / crash
+        - Regression (worked on an earlier build)
+        - Support requested / not tested
+    validations:
+      required: true
+  - type: input
+    id: payload-version
+    attributes:
+      label: PBS payload version or build
+      description: Leave blank if you are requesting support and have not tested a build.
+      placeholder: "e.g. version / build date"
+  - type: dropdown
+    id: functionality
+    attributes:
+      label: Affected functionality
+      options:
+        - Payload launch / initialization
+        - Video capture / encoding
+        - Audio capture
+        - Web Dashboard / streaming playback
+        - Recording / screenshots
+        - Multiple functions / general support
+        - Unknown / not tested
+    validations:
+      required: true
+  - type: textarea
+    id: observations
+    attributes:
+      label: Observed behavior
+      description: Describe what works, what fails, and any exact non-sensitive error codes. For untested firmware, state that explicitly.
+      placeholder: "On this firmware, PBS starts but ..."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction or test procedure
+      description: Explain which public/authorized PBS build you tried and how you checked compatibility. Leave blank for support requests.
+  - type: textarea
+    id: setup
+    attributes:
+      label: Video and network setup
+      description: If applicable, include resolution, FPS, HDR status, audio, browser/player, and wired/Wi-Fi setup.
+      placeholder: |
+        Resolution / FPS:
+        HDR:
+        Audio:
+        Browser / player:
+        Network:
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Additional evidence
+      description: Add sanitized errors/logs and screenshots only. Never attach proprietary dumps, system files, credentials, or device identifiers.
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing compatibility reports for this firmware.
+          required: true
+        - label: I will not post proprietary system files, sensitive logs, or personal/device identifiers.
+          required: true
