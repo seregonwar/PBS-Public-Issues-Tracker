@@ -1,0 +1,120 @@
+name: "Bug Report"
+description: "Report a reproducible bug in PBS, the Web Dashboard, or PBS Studio."
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve PBS! Search existing issues before submitting a new report.
+
+        **This is a public tracker.** Remove stream keys, credentials, tokens, public IP addresses, and personal information from any logs or screenshots. Do not attach proprietary system files or confidential builds.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Affected component
+      description: Select the component where the problem occurs.
+      options:
+        - PBS - PS4 payload
+        - PBS - PS5 payload
+        - PBS Web Dashboard
+        - PBS Studio
+        - PBS Studio plugin integration
+        - Other / Not sure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: PBS / PBS Studio version or build
+      description: Include a release number, build identifier, or approximate build date if known.
+      placeholder: "e.g. v1.2.0 / build date (or unknown)"
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - PlayStation 5
+        - PlayStation 4
+        - Windows
+        - macOS
+        - Linux
+        - Android
+        - iOS / iPadOS
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: firmware-os
+    attributes:
+      label: Firmware or operating system version
+      description: Exact PS4/PS5 firmware, or OS version for PBS Studio.
+      placeholder: "e.g. PS5 FW 10.60 / Windows 11 24H2"
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug description
+      description: What went wrong? Include any visible error messages.
+      placeholder: Describe the problem and when it started.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps that someone else can follow.
+      placeholder: |
+        1. Start PBS / PBS Studio...
+        2. Open...
+        3. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happens instead?
+    validations:
+      required: true
+  - type: textarea
+    id: capture
+    attributes:
+      label: Capture and network configuration
+      description: If relevant, provide resolution, FPS, HDR on/off, audio configuration, browser/player and network connection type.
+      placeholder: |
+        Resolution / FPS:
+        HDR:
+        Audio:
+        Browser / player:
+        Network: wired / Wi-Fi / local / remote
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Frequency
+      options:
+        - Always
+        - Intermittently
+        - Once
+        - Unknown
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs, screenshots or recordings
+      description: Paste sanitized logs or attach screenshots/recordings. Never post sensitive data or system dumps.
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues for duplicates.
+          required: true
+        - label: I removed confidential information from logs and attachments.
+          required: true
