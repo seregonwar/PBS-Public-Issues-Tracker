@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "PBS SDK documentation"
+    url: "https://github.com/seregonwar/PBS-SDK"
+    about: "Read the public PBS Studio plugin SDK documentation and examples before reporting integration problems."
